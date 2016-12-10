@@ -3,19 +3,18 @@
 <html>
   {% include head.html %}
   <body>
-    <div class="mdl-layout__container">
-      <div class="mdl-layout">
-            {% include header.html %}
-      <div class="page-content">
-        <div class="wrapper">
+    <div class="mdl-layout mdl-js-layout">
+      <div class="mdl-layout mdl-layout--fixed-header">
+
+        {% include header.html %}
+
+        <div class="mdl-layout__content">
           {{ content }}
         </div>
-      </div>
 
-      {% include footer.html %}
+        {% include footer.html %}
 
       </div>
     </div>
   </body>
-
 </html>

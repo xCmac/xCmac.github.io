@@ -1,15 +1,17 @@
 <header class="mdl-layout__header">
   <div class="mdl-layout__header-row">
-    <h1>
-      <a href="{{ site.url }}">3 Ring Code</a>
-    </h1>
+    <span class="mdl-layout__title">
+      <h1>
+        <a href="{{ site.url }}">3 Ring Code</a>
+      </h1>
+    </span>
     <div class="mdl-layout-spacer"></div>
     <nav class="mdl-navigation">
-              {% for page in site.pages %}
-              {% if page.title %}
-              <a class="mdl-navigation__link" href="{{ page.url | prepend:site.baseurl }}"> {{ page.title }} </a>
-              {% endif %}
-            {% endfor %}
+      {% for page in site.pages %}
+        {% if page.title %}
+          <a class="mdl-navigation__link" href="{{ page.url | prepend:site.baseurl }}"> {{ page.title }} </a>
+        {% endif %}
+      {% endfor %}
     </nav>
   </div>
 </header>

@@ -1,13 +1,53 @@
-# Site settings
 title: 3 Ring Code
-email: dsemac@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://3ringcode.com" # the base hostname & protocol for your site
-github_username: xcmac
-linkedinurl: "https://www.linkedin.com/in/dsemac"
-# Build settings
+description: SUPER AWESOME DESCRIPTION
+author: Cmac
+github: https://github.com/xCmac
+about: Developer, Skydiver and somethingawesome
+disqus_shortname: stackproblems
+google_analytics: UA-XXXXXXXX-Y
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    # - icon: fa-facebook
+    #   link: "#"
+    # - icon: fa-skype
+    #   link: "#"
+    # - icon: fa-twitter
+    #   link: "#"
+    - icon: fa-linkedin
+      link: "https://www.linkedin.com/in/dsemac"
+    - icon : fa-github
+      link: "https://github.com/xCmac"
+    # - icon: fa-stack-exchange
+    #   link: "#"
+
+share:
+  twitter_username: agusmakmun6
+  fb_appid: 1749788565247320
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: Projects
+      url: /projects/
+    - text: Github
+      url: https://github.com/xCmac
+    - text: XML Feed
+      url: /feed.xml
+
+url: "3ringcode.com"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page:num/"
 markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
